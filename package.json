@@ -58,7 +58,7 @@
       "title": "Cursor: Jump Down"
     }], 
     "configuration": {
-      "title": "CursorFlight",
+      "title": "Cursor Flight",
       "properties": {
         "cursor-flight.horizontalJumpAmount": {
           "type": "number",
