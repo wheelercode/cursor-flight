@@ -1,0 +1,96 @@
+{
+  "name": "cursor-flight",
+  "displayName": "Cursor Flight",
+  "description": "Jump the cursor up, down, left, and right by a customizable amount.",
+  "publisher": "Ryan Wheeler",
+  "author": {
+    "name": "Ryan Wheeler"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "cursor",
+    "move",
+    "jump",
+    "horizontal",
+    "vertical",
+    "magic"
+  ],
+  "icon": "resources/cursor_flight.png",
+  "galleryBanner": {
+    "color": "#525dff",
+    "theme": "light"
+  },
+  "license": "MIT",
+  "bugs": {
+    "email": "wheelercode@gmail.com"
+  },
+  "version": "1.0.0",
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/....................."
+	},
+  "engines": {
+    "vscode": "^1.72.0"
+  },
+  "activationEvents": [
+    "onCommand:cursor-flight.jumpLeft",
+    "onCommand:cursor-flight.jumpRight",
+    "onCommand:cursor-flight.jumpUp",
+    "onCommand:cursor-flight.jumpDown"
+  ],
+
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [{
+      "command": "cursor-flight.jumpLeft",
+      "title": "Cursor: Jump Left"
+    },{
+      "command": "cursor-flight.jumpRight",
+      "title": "Cursor: Jump Right"
+    },{
+      "command": "cursor-flight.jumpUp",
+      "title": "Cursor: Jump Up"
+    },{
+      "command": "cursor-flight.jumpDown",
+      "title": "Cursor: Jump Down"
+    }], 
+    "configuration": {
+      "title": "CursorFlight",
+      "properties": {
+        "cursor-flight.horizontalJumpAmount": {
+          "type": "number",
+          "default": 10,
+          "description": "Number of characters the cursor will jump horizontally." 
+        },
+        "cursor-flight.verticalJumpAmount": {
+          "type": "number",
+          "default": 5,
+          "description": "Number of characters the cursor will jump vertically." 
+        }
+      }
+    },
+    "keybindings": [{
+      "command": "cursor-flight.jumpLeft",
+      "key": "alt+left",
+      "mac": "alt+left",
+      "when": "editorTextFocus"
+    },{
+      "command": "cursor-flight.jumpRight",
+      "key": "alt+right",
+      "mac": "alt+right",
+      "when": "editorTextFocus"
+    },{
+      "command": "cursor-flight.jumpUp",
+      "key": "ctrl+up",
+      "mac": "ctrl+up",
+      "when": "editorTextFocus"
+    },{
+      "command": "cursor-flight.jumpDown",
+      "key": "ctrl+down",
+      "mac": "ctrl+down",
+      "when": "editorTextFocus"
+    }]
+  }
+}
