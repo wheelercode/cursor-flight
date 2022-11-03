@@ -24,12 +24,13 @@
   },
   "license": "MIT",
   "bugs": {
+    "url": "https://github.com/wheelercode/cursor-flight/issues",
     "email": "wheelercode@gmail.com"
   },
   "version": "1.0.0",
   "repository": {
 		"type": "git",
-		"url": "https://github.com/....................."
+		"url": "https://github.com/wheelercode/cursor-flight"
 	},
   "engines": {
     "vscode": "^1.72.0"
