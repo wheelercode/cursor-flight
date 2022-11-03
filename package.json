@@ -19,8 +19,8 @@
   ],
   "icon": "resources/cursor_flight.png",
   "galleryBanner": {
-    "color": "#525dff",
-    "theme": "light"
+    "color": "#1e1e1e",
+    "theme": "dark"
   },
   "license": "MIT",
   "bugs": {
@@ -93,5 +93,21 @@
       "mac": "ctrl+down",
       "when": "editorTextFocus"
     }]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.73.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "16.x",
+    "eslint": "^8.24.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.0.0",
+    "typescript": "^4.8.4",
+    "@vscode/test-electron": "^2.1.5"
   }
 }

@@ -1,0 +1,56 @@
+{
+  "name": "wordcount",
+  "displayName": "Word Count",
+  "version": "0.1.0",
+  "publisher": "ms-vscode",
+  "description": "Markdown Word Count Example - reports out the number of words in a Markdown file.",
+  "author": {
+    "name": "sean"
+  },
+  "categories": ["Other"],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#C80000",
+    "theme": "dark"
+  },
+  "activationEvents": ["onLanguage:markdown"],
+  "engines": {
+    "vscode": "^1.0.0"
+  },
+  "main": "./out/extension",
+  "scripts": {
+    "vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+    "compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^0.10.x",
+    "typescript": "^1.6.2"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/microsoft/vscode-wordcount/issues",
+    "email": "sean@contoso.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/microsoft/vscode-wordcount.git"
+  },
+  "homepage": "https://github.com/microsoft/vscode-wordcount/blob/main/README.md"
+}
+
+"scripts": {
+  "lint": "eslint .",
+  "pretest": "npm run lint",
+  "test": "node ./test/runTest.js"
+},
+"devDependencies": {
+  "@types/vscode": "^1.72.0",
+  "@types/glob": "^8.0.0",
+  "@types/mocha": "^10.0.0",
+  "@types/node": "16.x",
+  "eslint": "^8.24.0",
+  "glob": "^8.0.3",
+  "mocha": "^10.0.0",
+  "typescript": "^4.8.4",
+  "@vscode/test-electron": "^2.1.5"
+}

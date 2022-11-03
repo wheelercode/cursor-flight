@@ -35,7 +35,7 @@ This extension utilizes the following keybindings:
 
 ## Known Issues
 
-No known Issues.
+Window currently doesn't scroll horizontally with cursor.
 
 ## Release Notes
 
