@@ -27,11 +27,11 @@
     "url": "https://github.com/wheelercode/cursor-flight/issues",
     "email": "wheelercode@gmail.com"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
-		"type": "git",
-		"url": "https://github.com/wheelercode/cursor-flight"
-	},
+    "type": "git",
+    "url": "https://github.com/wheelercode/cursor-flight"
+  },
   "engines": {
     "vscode": "^1.72.0"
   },
@@ -41,58 +41,67 @@
     "onCommand:cursor-flight.jumpUp",
     "onCommand:cursor-flight.jumpDown"
   ],
-
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "cursor-flight.jumpLeft",
-      "title": "Cursor: Jump Left"
-    },{
-      "command": "cursor-flight.jumpRight",
-      "title": "Cursor: Jump Right"
-    },{
-      "command": "cursor-flight.jumpUp",
-      "title": "Cursor: Jump Up"
-    },{
-      "command": "cursor-flight.jumpDown",
-      "title": "Cursor: Jump Down"
-    }], 
+    "commands": [
+      {
+        "command": "cursor-flight.jumpLeft",
+        "title": "Cursor: Jump Left"
+      },
+      {
+        "command": "cursor-flight.jumpRight",
+        "title": "Cursor: Jump Right"
+      },
+      {
+        "command": "cursor-flight.jumpUp",
+        "title": "Cursor: Jump Up"
+      },
+      {
+        "command": "cursor-flight.jumpDown",
+        "title": "Cursor: Jump Down"
+      }
+    ],
     "configuration": {
       "title": "Cursor Flight",
       "properties": {
         "cursor-flight.horizontalJumpAmount": {
           "type": "number",
           "default": 10,
-          "description": "Number of characters the cursor will jump horizontally." 
+          "description": "Number of characters the cursor will jump horizontally."
         },
         "cursor-flight.verticalJumpAmount": {
           "type": "number",
           "default": 5,
-          "description": "Number of characters the cursor will jump vertically." 
+          "description": "Number of characters the cursor will jump vertically."
         }
       }
     },
-    "keybindings": [{
-      "command": "cursor-flight.jumpLeft",
-      "key": "alt+left",
-      "mac": "alt+left",
-      "when": "editorTextFocus"
-    },{
-      "command": "cursor-flight.jumpRight",
-      "key": "alt+right",
-      "mac": "alt+right",
-      "when": "editorTextFocus"
-    },{
-      "command": "cursor-flight.jumpUp",
-      "key": "ctrl+up",
-      "mac": "ctrl+up",
-      "when": "editorTextFocus"
-    },{
-      "command": "cursor-flight.jumpDown",
-      "key": "ctrl+down",
-      "mac": "ctrl+down",
-      "when": "editorTextFocus"
-    }]
+    "keybindings": [
+      {
+        "command": "cursor-flight.jumpLeft",
+        "key": "alt+left",
+        "mac": "alt+left",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursor-flight.jumpRight",
+        "key": "alt+right",
+        "mac": "alt+right",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursor-flight.jumpUp",
+        "key": "ctrl+up",
+        "mac": "ctrl+up",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "cursor-flight.jumpDown",
+        "key": "ctrl+down",
+        "mac": "ctrl+down",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint .",
