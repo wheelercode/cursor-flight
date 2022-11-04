@@ -4,7 +4,7 @@ Cursor Flight is a simple cursor extension that enables incremental cursor movem
 
 ## Features
 
-- Move the cursor a specified number characters left or right, (default 10).
+- Move the cursor a specified number of characters left or right, (default 10).
 - Move the cursor a specified number of lines up or down (default 5).
 - Customize the movement sizes in the settings.
 
