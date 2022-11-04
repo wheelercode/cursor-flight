@@ -1,12 +1,13 @@
 # cursor-flight README
 
-Cursor Flight is a simple cursor extension allowing users to jump a certain number of characters forward or backwards on the current line, or a certain number of lines up or down. 
+Cursor Flight is a simple cursor extension that enables incremental cursor movement in any direction.
 
 ## Features
 
-- Jump the cursor a specified number characters forward or backwards (default 10).
-- Jump the cursor a specified number of lines up or down (default 5).
-- Customize the jump sizes in the settings.
+- Move the cursor a specified number characters left or right, (default 10).
+- Move the cursor a specified number of lines up or down (default 5).
+- Customize the movement sizes in the settings.
+
 
 ## Requirements
 
@@ -16,22 +17,22 @@ Works for all languages and editors.
 
 This extension contributes the following commands:
 
-* `cursor-flight.jumpLeft`: Jump the cursor left.
-* `cursor-flight.jumpRight`: Jump the cursor right.
-* `cursor-flight.jumpUp`: Jump the cursor up.
-* `cursor-flight.jumpDown`: Jump the cursor down.
+* `cursor-flight.jumpLeft`: Move the cursor left.
+* `cursor-flight.jumpRight`: Move the cursor right.
+* `cursor-flight.jumpUp`: Move the cursor up.
+* `cursor-flight.jumpDown`: Move the cursor down.
 
 This extension contributes the following settings:
 
-* `cursor-flight.horizontalJumpAmount`: Number of characters the cursor will jump forwards or backwards on the current line.
-* `cursor-flight.verticalJumpAmount`: Number of lines the cursor will jump up or down from the current line.
+* `cursor-flight.horizontalJumpAmount`: Number of characters the cursor will move forwards or backwards on the current line.
+* `cursor-flight.verticalJumpAmount`: Number of lines the cursor will move up or down from the current line.
 
 This extension utilizes the following keybindings:
 
-* `alt+left`: Jump Left
-* `alt+right`: Jump Right
-* `ctrl+up`: Jump Up
-* `ctrl+down`: Jump Down
+* `alt+left`: Move Left
+* `alt+right`: Move Right
+* `ctrl+up`: Move Up
+* `ctrl+down`: Move Down
 
 ## Known Issues
 
@@ -39,11 +40,9 @@ No known issues
 
 ## Release Notes
 
-Initial Release - 11/2/2022
-
 ### 1.0.0
 
-Initial release.
+Initial release on 11/2/2022
 
 ### 1.0.1
 
@@ -51,4 +50,4 @@ Cosmetic changes to marketplace appearance
 
 ### 1.0.2
 
-**Fixed**: Horizontal scrolling now functional.
+**Fixed**: Horizontal scrolling
