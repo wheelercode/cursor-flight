@@ -23,3 +23,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - **Added:** .vscodeignore
 - **Added:** extensions.js
 - **Changed:** package.json - new banner color #1e1e1e
+
+## [1.0.2]
+
+- **Fixed:** Horizontal scrolling now works when jumping left or right.

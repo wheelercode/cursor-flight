@@ -35,7 +35,7 @@ This extension utilizes the following keybindings:
 
 ## Known Issues
 
-Window currently doesn't scroll horizontally with cursor.
+No known issues
 
 ## Release Notes
 
@@ -45,4 +45,10 @@ Initial Release - 11/2/2022
 
 Initial release.
 
----
+### 1.0.1
+
+Cosmetic changes to marketplace appearance
+
+### 1.0.2
+
+**Fixed**: Horizontal scrolling now functional.
